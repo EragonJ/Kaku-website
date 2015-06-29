@@ -1,0 +1,31 @@
+{
+  "name": "Kaku",
+  "version": "0.0.0",
+  "homepage": "http://kaku.rocks",
+  "authors": [
+    "EragonJ <eragonj@eragonj.me>"
+  ],
+  "description": "Kaku, next generation music player",
+  "keywords": [
+    "Kaku",
+    "React.js",
+    "Electron",
+    "js",
+    "javascript",
+    "player",
+    "music"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "components-font-awesome": "~4.3.0"
+  }
+}

@@ -1,0 +1,92 @@
+/* override Bootstrap */
+.navbar-static-top {
+  margin-bottom: 0;
+}
+
+/* misc */
+i.fa-heartbeat {
+  color: #ff1142;
+}
+
+/* others */
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+footer p {
+  color: #333;
+  text-align: center;
+  margin: 0; 
+}
+
+footer a {
+  color: #333;
+}
+
+.each-block.cover {
+  position: relative;
+}
+
+.each-block.cover .background-image {
+  width: 100%;
+}
+
+.each-block.cover .introduction {
+  position: absolute;
+  width: 300px;
+  top: 60%;
+  right: 5%;
+  color: white;
+  text-align: right;
+}
+
+.each-block.statement .col {
+  margin-bottom: 20px; 
+}
+
+.each-block.statement h1 {
+  text-align: center;
+}
+
+.each-block.statement h1 i {
+  margin-right: 10px;
+}
+
+.each-block.statement p {
+  font-size: 16px;
+}
+
+.each-block.statement p.with-icon {
+  text-align: center;
+  font-size: 100px;
+}
+
+.each-block.contributors {
+  height: 500px;
+  background-color: #f9f9f9;
+}
+
+.each-block.contributors .contributor-list {
+  margin-top: 30px;
+}
+
+.each-block.contributors .contributor-list li {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.each-block.contributors .contributor-list img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.each-block.contributors .contributor-list .name {
+  width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
