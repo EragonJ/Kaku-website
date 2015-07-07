@@ -44,8 +44,19 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <button class="btn btn-link navbar-btn">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kaku.rocks" data-text="I am listening music on Kaku !" data-hashtags="kaku_rocks">Tweet</a>
+              </button>
+            </li>
+            <li>
+              <a href="#">
+                <div class="fb-like" data-href="http://kaku.rocks" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+              </a>
+            </li>
             <li><a href="https://github.com/EragonJ/Kaku/releases">Download</a></li>
-            <li><a href="https://github.com/EragonJ/Kaku">Source Code</a></li>
+            <li><a href="https://github.com/EragonJ/Kaku">GitHub</a></li>
+            <li><a href="https://www.facebook.com/kaku.rocks"><i class="fa fa-facebook-official"></i>Facebook Page</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -88,6 +99,8 @@
     <footer>
       <p>By <a href="http://eragonj.me">EragonJ</a> | <i class="fa fa-heartbeat"></i> | <a href="https://www.flickr.com/photos/forayinto35mm/8458409048/sizes/o/">Image Credit</a></p>
     </footer>
+    <div id="fb-root"></div>
+    <!-- ga -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -96,5 +109,15 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-64370244-1','auto');ga('send','pageview');
     </script>
+    <!-- fb -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1516640965257997";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </body>
 </html>
