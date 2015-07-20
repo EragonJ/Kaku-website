@@ -18,6 +18,10 @@ body > nav i {
   margin: 0 5px;
 }
 
+footer {
+  background-color: #f9f9f9;
+}
+
 footer p {
   color: #333;
   text-align: center;
@@ -34,6 +38,7 @@ footer a {
 
 .each-block.cover .background-image {
   width: 100%;
+  min-height: 200px;
 }
 
 .each-block.cover .introduction {
@@ -66,9 +71,17 @@ footer a {
   font-size: 100px;
 }
 
-.each-block.contributors {
-  height: 500px;
+.each-block.app-introduction {
+  padding: 20px;
+  text-align: center;
   background-color: #f9f9f9;
+}
+
+.each-block.app-introduction img {
+  margin-bottom: 10px;
+}
+
+.each-block.contributors {
 }
 
 .each-block.contributors .contributor-list {
