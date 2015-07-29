@@ -1,0 +1,14 @@
+{
+  "news": [
+    {
+      "date": "2015-07-29 16:27:08",
+      "title": "This is title",
+      "content": "This is content"
+    },
+    {
+      "date": "2015-07-20 16:20:07",
+      "title": "title is tooooo long",
+      "content": "Amet ab quo nihil incidunt ipsum. Soluta repellat quidem sunt accusantium inventore molestias quidem veritatis expedita? Itaque ab doloribus non ut quibusdam magni excepturi soluta officia necessitatibus quaerat sit! Aspernatur."
+    }
+  ]
+}
