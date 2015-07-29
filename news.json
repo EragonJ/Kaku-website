@@ -1,14 +1,10 @@
 {
   "news": [
     {
-      "date": "2015-07-29 16:27:08",
-      "title": "This is title",
-      "content": "This is content"
-    },
-    {
-      "date": "2015-07-20 16:20:07",
-      "title": "title is tooooo long",
-      "content": "Amet ab quo nihil incidunt ipsum. Soluta repellat quidem sunt accusantium inventore molestias quidem veritatis expedita? Itaque ab doloribus non ut quibusdam magni excepturi soluta officia necessitatibus quaerat sit! Aspernatur."
+      "date": "2015-07-17 16:04:44",
+      "title": "Kaku 1.0.0 was released !",
+      "content": "We just released 1.0.0 version for Kaku ! In this version, you can listen to YouTube, Vimeo tracks and add playlists. In addition to this, we do support English, Français and 繁體中文.",
+      "label": "info"
     }
   ]
 }
