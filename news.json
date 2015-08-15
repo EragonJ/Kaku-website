@@ -1,6 +1,12 @@
 {
   "news": [
     {
+      "date": "2015-08-16 01:09:44",
+      "title": "Kaku 1.1.0 was released !",
+      "content": "Release Notes : <ul><li>Add SoundCloud Searcher</li><li>Add backup / sync feature (Local + Dropbox)</li><li>Add Japanese translation </li><li>Add Download Manager</li><li>Polish UI / fixed lots of small bugs</li><li>Please use Cmd / Ctrl+D to download tracks instead.</li></ul>",
+      "label": "info"
+    },
+    {
       "date": "2015-07-17 16:04:44",
       "title": "Kaku 1.0.0 was released !",
       "content": "We just released 1.0.0 version for Kaku ! In this version, you can listen to YouTube, Vimeo tracks and add playlists. In addition to this, we do support English, Français and 繁體中文.",
