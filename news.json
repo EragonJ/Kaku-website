@@ -1,6 +1,18 @@
 {
   "news": [
     {
+      "date": "2015-09-26 23:00:20",
+      "title": "If your friends have problems when installing Kaku",
+      "content": "Please tell them to unzip files into C:\\Kaku or D:\\Kaku to avoid hitting MAX_PATH_LENGTH problem in Windows. After testing, this should fix the problem about installing Kaku.",
+      "label": "warning"
+    },
+    {
+      "date": "2015-09-26 22:50:44",
+      "title": "Kaku 1.5.0 was released !",
+      "content": "Release Notes : <ul><li>Rewrite the whole application with webpack</li><li>Fixed snapshot problem for Vimeo Tracks</li><li>Added world-wide Top tracking !</li><li>Translate App menu items to all different languages</li><li>Added Russian translation</li><li>Added Portuguese translation</li><li>Added tooltip for tracks</li><li>Added Best Audio option in Settings page to reduce your bandwidth</li><li>Added Always on Top option in Settings page</li><li>Increased search results to 50 items</li><li>Fixed unknown artist problem</li><li>Fixed MAX_LENGTH problem in Windows</li></ul>",
+      "label": "info"
+    },
+    {
       "date": "2015-08-16 01:09:44",
       "title": "Kaku 1.1.0 was released !",
       "content": "Release Notes : <ul><li>Add SoundCloud Searcher</li><li>Add backup / sync feature (Local + Dropbox)</li><li>Add Japanese translation </li><li>Add Download Manager</li><li>Polish UI / fixed lots of small bugs</li><li>Please use Cmd / Ctrl+D to download tracks instead.</li></ul>",
