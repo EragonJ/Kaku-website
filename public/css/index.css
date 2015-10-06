@@ -92,6 +92,7 @@ footer a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 
   transition: all 0.5s linear;
   -webkit-filter: grayscale(100%);
