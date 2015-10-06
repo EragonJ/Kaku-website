@@ -19,13 +19,12 @@ body > nav i {
 }
 
 footer {
-  background-color: #f9f9f9;
 }
 
 footer p {
   color: #333;
   text-align: center;
-  margin: 0; 
+  margin: 0;
 }
 
 footer a {
@@ -51,7 +50,7 @@ footer a {
 }
 
 .each-block.statement .col {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .each-block.statement h1 {
@@ -81,7 +80,37 @@ footer a {
   margin-bottom: 10px;
 }
 
+.each-block.app-marketing a {
+  display: inline-block;
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+
+.each-block.app-marketing img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  transition: all 0.5s linear;
+  -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+       -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.each-block.app-marketing img:hover {
+  -webkit-filter: grayscale(0%);
+     -moz-filter: grayscale(0%);
+       -o-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 .each-block.contributors {
+  background-color: #f9f9f9;
 }
 
 .each-block.contributors .contributor-list {
