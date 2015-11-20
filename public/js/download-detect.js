@@ -9,6 +9,7 @@ $(document).ready(function() {
   var linuxRegex = /Lin/;
   var linux64Regex = /x86_64/;
   var $downloadButton = $('#download-button');
+  var $downloadDropdownMenu = $('.download-dropdown-menu');
 
   // fetch the latest release first
   $.ajax({
@@ -18,22 +19,38 @@ $(document).ready(function() {
     var kakuVersion = result.name || '';
     var assets = result.assets || [];
 
+    var downloads = {};
+    var platforms = ['linux32', 'linux64', 'win', 'mac'];
+    var platformNames = ['Linux32', 'Linux64', 'Windows', 'Mac OS X'];
+    var platformsIcon = ['fa-linux', 'fa-linux', 'fa-windows', 'fa-apple'];
+    platforms.forEach(function(platformName) {
+      downloads[platformName] = getDownloadLinkFor(platformName, assets);
+    });
+
     if (macRegex.test(platform)) {
-      downloadLink = getDownloadLinkFor('mac', assets);
+      downloadLink = downloads['mac'];
     }
     else if (winRegex.test(platform)) {
-      downloadLink = getDownloadLinkFor('win', assets);
+      downloadLink = downloads['win'];
     }
     else if (linuxRegex.test(platform)) {
       // Linux 64
       if (linux64Regex.test(platform)) {
-        downloadLink = getDownloadLinkFor('linux64', assets);
+        downloadLink = downloads['linux64']
       }
       // Linux 32
       else {
-        downloadLink = getDownloadLinkFor('linux32', assets);
+        downloadLink = downloads['linux32'];
       }
     }
+
+    platforms.forEach(function(platformName, index) {
+      var $dropdownList = $('<li><a></a></li>');
+      $a = $dropdownList.find('a');
+      $a.attr('href', downloads[platformName]);
+      $a.html('<i class="fa ' + platformsIcon[index] + '"></i>' + platformNames[index] + ' - v' + kakuVersion);
+      $downloadDropdownMenu.prepend($dropdownList);
+    });
     
     $downloadButton
       .attr('href', downloadLink)
