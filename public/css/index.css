@@ -76,6 +76,13 @@ footer a {
   background-color: #f9f9f9;
 }
 
+.each-block.app-introduction .release-note {
+  padding: 20px;
+  text-align: left;
+  border: 5px solid #dedede;
+  border-radius: 10px;
+}
+
 .each-block.app-introduction img {
   margin-bottom: 10px;
 }

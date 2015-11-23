@@ -1,0 +1,15 @@
+{
+  "name": "js-emoji",
+  "homepage": "https://github.com/iamcal/js-emoji",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "f11da0b4e99891b54efe1edf3c170faf072d2a27"
+  },
+  "_source": "git://github.com/iamcal/js-emoji.git",
+  "_target": "~1.0.0",
+  "_originalSource": "js-emoji",
+  "_direct": true
+}

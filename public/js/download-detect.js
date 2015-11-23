@@ -9,6 +9,7 @@ $(document).ready(function() {
   var linuxRegex = /Lin/;
   var linux64Regex = /x86_64/;
   var $downloadButton = $('#download-button');
+  var $releaseNote = $('.release-note');
   var $downloadDropdownMenu = $('.download-dropdown-menu');
 
   // fetch the latest release first
@@ -18,11 +19,14 @@ $(document).ready(function() {
     var downloadLink;
     var kakuVersion = result.name || '';
     var assets = result.assets || [];
+    var releaseNote = result.body || '';
+    releaseNote = releaseNote.split('\n');
 
     var downloads = {};
     var platforms = ['linux32', 'linux64', 'win', 'mac'];
     var platformNames = ['Linux32', 'Linux64', 'Windows', 'Mac OS X'];
     var platformsIcon = ['fa-linux', 'fa-linux', 'fa-windows', 'fa-apple'];
+
     platforms.forEach(function(platformName) {
       downloads[platformName] = getDownloadLinkFor(platformName, assets);
     });
@@ -55,6 +59,20 @@ $(document).ready(function() {
     $downloadButton
       .attr('href', downloadLink)
       .text('Download Kaku ' + kakuVersion);
+
+
+    releaseNote.forEach(function(eachLine) {
+      var $line = $('<div></div>');
+
+      if (eachLine.length === 1) {
+        $line = $('<br>');
+      } else {
+        $line.text(eachLine);
+        $line.emoji();
+      }
+
+      $releaseNote.append($line);
+    });
 
   }).fail(function() {
     // there may be some problems, let's just redirect users to our repo
