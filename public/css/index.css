@@ -81,6 +81,7 @@ footer a {
   text-align: left;
   border: 5px solid #dedede;
   border-radius: 10px;
+  font-size: 16px;
 }
 
 .each-block.app-introduction img {
