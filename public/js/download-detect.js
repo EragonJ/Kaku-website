@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   var githubReleaseLink = 'https://github.com/EragonJ/Kaku/releases';
   var githubReleaseAPILink =
     'https://api.github.com/repos/EragonJ/Kaku/releases/latest';
