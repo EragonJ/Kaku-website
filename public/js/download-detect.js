@@ -53,7 +53,7 @@ $(document).ready(function() {
       var $dropdownList = $('<li><a></a></li>');
       $a = $dropdownList.find('a');
       $a.attr('href', downloads[platformName]);
-      $a.html('<i class="fa ' + platformsIcon[index] + '"></i>' + platformNames[index] + ' - v' + kakuVersion);
+      $a.html('<i class="fa fa-fw ' + platformsIcon[index] + '"></i>' + platformNames[index] + ' - v' + kakuVersion);
       $downloadDropdownMenu.prepend($dropdownList);
     });
     
