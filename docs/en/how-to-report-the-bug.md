@@ -5,7 +5,7 @@
 > - Provide your problem information：
   - Kaku version
   - OS platform and version
-  - Open DevTools and switch to ** console panel ** and copy the **error message**：
+  - Open DevTools and switch to ** Console Panel ** and copy the **Error Message**：
     - Mac：<kbd>cmd + option + i</kbd>
     - Linux：<kbd>ctrl + alt + i</kbd>
     - Windows：<kbd>ctrl + alt + i</kbd>
@@ -17,13 +17,13 @@
 
 ## How to open DevTools？
 ### Mac
-<kbd>cmd + option + i</kbd> open it：  
-![console panel](./screenshot/mac-consolePanel.png)
+Click <kbd>cmd + option + i</kbd> open it：  
+![console panel](../screenshot/mac-consolePanel.png)
 
 ### Linux & Windows
-<kbd>ctrl + alt + i</kbd> open it：
+Click <kbd>ctrl + alt + i</kbd> open it：
 
-![console panel](./screenshot/linuxAndWin-consolePanel.png)
+![console panel](../screenshot/linuxAndWin-consolePanel.png)
 
 then you can copy error message from **Console** panel.
 
@@ -32,8 +32,8 @@ then you can copy error message from **Console** panel.
 Click [here](https://github.com/EragonJ/Kaku/issues) you can open a new issue.  
 
 1. Click **New Issue**
-![Open a new issue](./screenshot/openNewIssue.png)
+![Open a new issue](../screenshot/openNewIssue.png)
 
 2. You can write your error message or snap image pass here use [Markdown](https://zh.wikipedia.org/wiki/Markdown) format,  
-then you can preview your content, finally submit new issue.
-![issue content](./screenshot/issueContent.png)
+then you can preview your content, finally submit a new issue.
+![issue content](../screenshot/issueContent.png)
