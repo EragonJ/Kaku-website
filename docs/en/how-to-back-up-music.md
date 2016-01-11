@@ -25,10 +25,10 @@ Now, choose **backup to Dropbox** then you can see **Dropbox API Request Authori
 Next you can see authorization request, click permission.
 ![dropboxAuth](../screenshot/dropboxAuth.png)
 
-Kaku have **notification** and  you can check out  backup in your Dropbox.
+Kaku have **notification** and you can check out  backup in your Dropbox.
 ![backupToDropboxSuccessful](../screenshot/backupToDropboxSuccessful.png)
 
 Open your Dropbox and go to **Applicatoin** you will find your backup playlist.
 ![dropboxApp](../screenshot/dropboxApp.png)
 
-Done！ Kaku backup it's easy, right？
+Done！Kaku backup it's easy, right？
