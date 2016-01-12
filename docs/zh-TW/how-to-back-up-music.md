@@ -18,9 +18,9 @@
 看起來很簡單吧？如果我想要備份到 **Dropbox** 呢？  
 
 ### 備份到 Dropbox
-回到設定，請選擇**備份資料到 Dropbox**然後你會看到 **Dropbox API 請求認證**。
+回到設定，請選擇**備份資料到 Dropbox**然後你會看到 **Dropbox API 請求認證**。  
+**請不要擔心，我們不會儲存你的任何資料！**
 ![dropboxApiRequestAuth](../screenshot/dropboxApiRequestAuth.png)
-**請不要擔心，我們不會儲存你的任何資料！**  
 
 接著你可以看到授權的請求，請點下「允許」。
 ![dropboxAuth](../screenshot/dropboxAuth.png)

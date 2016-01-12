@@ -18,9 +18,9 @@ After you can check out your folder, and you can see that have a **txt** backup 
 Looks so easy, But If I want to backup to **Dropbox**？  
 
 ### Backup to Dropbox
-Now, choose **backup to Dropbox** then you can see **Dropbox API Request Authorization**.
+Now, choose **backup to Dropbox** then you can see **Dropbox API Request Authorization**.  
+**Don't Worry！we will not save your any information.**
 ![dropboxApiRequestAuth](../screenshot/dropboxApiRequestAuth.png)
-**Don't Worry！we will not save your any information.**  
 
 Next you can see authorization request, click permission.
 ![dropboxAuth](../screenshot/dropboxAuth.png)
