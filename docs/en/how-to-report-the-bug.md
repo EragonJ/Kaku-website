@@ -16,24 +16,22 @@
 > - Finally, open a new [issue](https://github.com/EragonJ/Kaku/issues) report bug.
 
 ## How to open DevTools？
+
 ### Mac
 Click <kbd>cmd + option + i</kbd> open it：  
 ![console panel](../screenshot/mac-consolePanel.png)
 
 ### Linux & Windows
-Click <kbd>ctrl + alt + i</kbd> open it：
-
-![console panel](../screenshot/linuxAndWin-consolePanel.png)
-
+Click <kbd>ctrl + alt + i</kbd> open it：  
+![console panel](../screenshot/linuxAndWin-consolePanel.png)  
 then you can copy error message from **Console** panel.
 
 ## Open a new issue
-
 Click [here](https://github.com/EragonJ/Kaku/issues) you can open a new issue.  
 
-1. Click **New Issue**
+1. Click **New Issue**.  
 ![Open a new issue](../screenshot/openNewIssue.png)
 
 2. You can write your error message or snap image pass here use [Markdown](https://zh.wikipedia.org/wiki/Markdown) format,  
-then you can preview your content, finally submit a new issue.
+then you can preview your content, finally submit a new issue.  
 ![issue content](../screenshot/issueContent.png)

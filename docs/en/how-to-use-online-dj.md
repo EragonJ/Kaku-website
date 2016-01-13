@@ -1,20 +1,20 @@
 # How to use online DJ？
 
 #### Choose Be a DJ
-You can setting your `nickname` and `room name` then you can create room.
+You can setting your `nickname` and `room name` then you can create room.  
 ![onlineDJ](../screenshot/onlineDJ.png)
 
 #### Get room key
-After create room, you can get room key and you can share for your friends.
-![getRoomKey](../screenshot/getRoomKey.png)
+After create room, you can get room key and you can share for your friends.  
+![getRoomKey](../screenshot/getRoomKey.png)  
 
 Now, you are already a DJ, you can share your playlist.  
 The following is demo for guest, your friends can join DJ room and use chat room talk anything！
 
 #### Guest join DJ room
-Choose `Be a Guest`, you can setting your `nickname` and enter `room key` that you can join.
+Choose `Be a Guest`, you can setting your `nickname` and enter `room key` that you can join.  
 ![guest](../screenshot/guest.png)
 
 #### Successful join room
-That's Cool！You can listening music with your friends and even use chat room talk anything！
+That's Cool！You can listening music with your friends and even use chat room talk anything！  
 ![successfulJoin](../screenshot/successfulJoin.png)

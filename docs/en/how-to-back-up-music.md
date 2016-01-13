@@ -19,7 +19,7 @@ Looks so easy, But If I want to backup to **Dropbox**？
 
 ### Backup to Dropbox
 Now, choose **backup to Dropbox** then you can see **Dropbox API Request Authorization**.  
-**Don't Worry！we will not save your any information.**
+**Don't Worry！we will not save your any information.**  
 ![dropboxApiRequestAuth](../screenshot/dropboxApiRequestAuth.png)
 
 Next you can see authorization request, click permission.
