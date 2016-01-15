@@ -16,23 +16,27 @@
 > - 最後，你可以開一個新的 [issue](https://github.com/EragonJ/Kaku/issues) 來回報問題。
 
 ## 如何開啟 Debug 工具？
+
 ### Mac
-按下 <kbd>cmd + option + i</kbd> 開啟：  
-![console panel](../screenshot/mac-consolePanel.png)
+按下 <kbd>cmd + option + i</kbd> 開啟：
+
+![console panel](http://imgur.com/f6pAgSP.png)
 
 ### Linux 和 Windows
 按下 <kbd>ctrl + alt + i</kbd> 開啟：
 
-![console panel](../screenshot/linuxAndWin-consolePanel.png)
+![console panel](http://imgur.com/GTlm7rY.png)
 
-然後你可以從 **Console** 面板複製錯誤訊息。
+然後你可以從 **Console** 面板複製錯誤訊息。  
 
 ## 如何回報問題？
 
-請到[這裡](https://github.com/EragonJ/Kaku/issues)提交一個新的 issue 回報給我們。
+請到[這裡](https://github.com/EragonJ/Kaku/issues)提交一個新的 issue 回報給我們。  
 
 1. Click **New Issue**
-![Open a new issue](../screenshot/openNewIssue.png)
+
+![Open a new issue](http://imgur.com/97okREc.png)
 
 2. 你可以寫下你的錯誤訊息或者是截圖貼在這裡，請使用 [Markdown](https://zh.wikipedia.org/wiki/Markdown) 格式，然後你可以點下 **Preview** 來預覽你所寫的內容，最後就可以提交問題囉！
-![issue content](../screenshot/issueContent.png)
+
+![issue content](http://imgur.com/uoGEXOB.png)

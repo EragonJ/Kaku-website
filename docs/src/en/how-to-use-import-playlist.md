@@ -7,24 +7,31 @@ and choose your previous backup method.
 
 #### Sync Data From Local
 Choose `Sync data from Local`.
-![syncDataFromLocal](../screenshot/syncDataFromLocal.png)
+
+![syncDataFromLocal](http://imgur.com/kcfliSg.png)
 
 Kaku will have notification, if you don't want to replace your playlist click `Chancel` otherwise click `OK`.
-![replaceNewData](../screenshot/replaceNewData.png)
+
+![replaceNewData](http://imgur.com/ovgeYdJ.png)
 
 Choose your save path and import it.
-![chooseLocalBackup](../screenshot/chooseLocalBackup.png)
+
+![chooseLocalBackup](http://imgur.com/BQFYm0R.png)
 
 Done！
-![importSuccessful](../screenshot/importSuccessful.png)
+
+![importSuccessful](http://imgur.com/1CRzYSx.png)
 
 #### Sync Data From Dropbox
 Choose `Sync data from Dropbox` and you can see **Dropbox API Request Authorization**.  
 **Don't Worry！we will not save your any information.**
-![dropboxApiRequestAuth](../screenshot/dropboxApiRequestAuth.png)
+
+![dropboxApiRequestAuth](http://imgur.com/q8kj6dg.png)
 
 You can see authorization request, click permission and will sync your playlist.
-![dropboxAuth](../screenshot/dropboxAuth.png)
+
+![dropboxAuth](http://imgur.com/5c5vcX0.png)
 
 Done！
-![importSuccessful](../screenshot/importSuccessful.png)
+
+![importSuccessful](http://imgur.com/1CRzYSx.png)
