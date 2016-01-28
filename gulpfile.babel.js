@@ -1,7 +1,7 @@
 import fs from 'fs';
 import gulp from 'gulp';
 import rename from 'gulp-rename';
-import clean from 'gulp-clean';
+import rimraf from 'rimraf';
 import markdown from 'gulp-markdown';
 import template from 'gulp-template';
 
@@ -62,10 +62,8 @@ gulp.task('mergeTW', ['zhTW'], () => {
   });
 });
 
-gulp.task('build', ['mergeEn', 'mergeTW'], () => {
-  return gulp
-    .src('./docs/tmp')
-    .pipe(clean())
+gulp.task('build', ['mergeEn', 'mergeTW'], (cb) => {
+  rimraf('./docs/tmp', cb);
 });
 
 gulp.task('default', ['build']);
