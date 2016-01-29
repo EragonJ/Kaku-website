@@ -13,16 +13,65 @@
 	    <meta property="og:image" content="http://kaku.rocks/public/img/logo.png">
 	    <meta property="og:description" content="Kaku is the next generation music player supports many different platform like YouTube, Vimeo ... etc. With it, you can listen to any music you like in different platform with just one single click, so simple to use !">
 
-		<link rel="shortcut icon" type="image/png" href="../../favicon.ico">
+      <link rel="shortcut icon" type="image/png" href="../../favicon.ico">
 	    <link rel="apple-touch-icon" href="../../public/img/logo.png">
-
-	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2">
 	    <link rel="stylesheet" type="text/css" href="../../public/vendor/bootstrap/dist/css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/vendor/components-font-awesome/css/font-awesome.min.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/vendor/js-emoji/emoji.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+      <link rel="stylesheet" type="text/css" href="../../public/vendor/components-font-awesome/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="../../public/vendor/github-markdown-css/github-markdown.css">
+	    <link rel="stylesheet" type="text/css" href="../../public/css/global.css">
+	    <link rel="stylesheet" type="text/css" href="../../public/css/docs.css">
+
+      <script src="../../public/vendor/jquery/dist/jquery.min.js"></script>
+      <script src="../../public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../../public/js/download-detect.js"></script>
 	</head>
     <body>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="../../">
+              <img src="../../public/img/logo.png" alt="Kaku's logo" width="20" height="20">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../">Kaku</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <button class="btn btn-link navbar-btn">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kaku.rocks" data-text="I am listening music on Kaku !" data-hashtags="kaku_rocks">Tweet</a>
+                </button>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="fb-like" data-href="https://www.facebook.com/kaku.rocks" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-download"></i>Download</a>
+                <ul class="dropdown-menu download-dropdown-menu">
+                  <li role="separator" class="divider"></li>
+                  <li><a target="_blank" href="https://github.com/EragonJ/Kaku/releases"><i class="fa fa-fw fa-github"></i>All Downloads</a></li>
+                  <li><a target="_blank" href="https://aur4.archlinux.org/packages/kaku-bin"><i class="fa fa-fw fa-file-archive-o"></i>AUR package for Arch Linux</a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/EragonJ/Kaku"><i class="fa fa-github"></i>GitHub</a></li>
+              <li><a href="https://www.facebook.com/kaku.rocks"><i class="fa fa-facebook-official"></i>Follow our Facebook</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="markdown-body">
         <h1 id="-dj-">如何使用線上 DJ？</h1>
 <h4 id="-dj">請選擇你要成為 DJ</h4>
 <p>你可以設定你的<code>暱稱</code>和<code>房間名稱</code>就可以建立你的 DJ 房間了。</p>
@@ -38,5 +87,27 @@
 <p>很酷對吧！你可以和你的朋友一起聽音樂，還可以使用右下方的聊天室盡情的談論任何事情！</p>
 <p><img src="http://imgur.com/HKRTaRP.png" alt="successfulJoin"></p>
 
+      </div>
+
+      <div id="fb-root"></div>
+      <!-- ga -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-64370244-1','auto');ga('send','pageview');
+      </script>
+      <!-- fb -->
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1516640965257997";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <!-- twitter -->
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </body>
 </html>

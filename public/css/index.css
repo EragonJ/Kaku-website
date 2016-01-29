@@ -1,36 +1,3 @@
-/* override Bootstrap */
-.navbar-static-top {
-  margin-bottom: 0;
-}
-
-/* misc */
-i.fa-heartbeat {
-  color: #ff1142;
-}
-
-/* others */
-
-body {
-  font-family: 'Exo 2', sans-serif;
-}
-
-body > nav i {
-  margin: 0 5px;
-}
-
-footer {
-}
-
-footer p {
-  color: #333;
-  text-align: center;
-  margin: 0;
-}
-
-footer a {
-  color: #333;
-}
-
 .each-block.cover {
   position: relative;
 }
