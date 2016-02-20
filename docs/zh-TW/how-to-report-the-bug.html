@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Kaku tutorial - HOW TO REPORT THE BUG</title>
-		<meta name="description" content="Kaku is the next generation music player supports many different platform like YouTube, Vimeo ... etc. With it, you can listen to any music you like in different platform with just one single click, so simple to use !">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta property="og:title" content="Kaku - Next generation music player">
-	    <meta property="og:type" content="website">
-	    <meta property="og:fb:app_id" content="1516640965257997">
-	    <meta property="og:url" content="http://kaku.rocks">
-	    <meta property="og:image" content="http://kaku.rocks/public/img/logo.png">
-	    <meta property="og:description" content="Kaku is the next generation music player supports many different platform like YouTube, Vimeo ... etc. With it, you can listen to any music you like in different platform with just one single click, so simple to use !">
+      <title>Kaku tutorial - HOW TO REPORT THE BUG</title>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="Kaku is the next generation music player supports many different platform like YouTube, Vimeo ... etc. With it, you can listen to any music you like in different platform with just one single click, so simple to use !">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Kaku - Next generation music player">
+<meta property="og:type" content="website">
+<meta property="og:fb:app_id" content="1516640965257997">
+<meta property="og:url" content="http://kaku.rocks">
+<meta property="og:image" content="http://kaku.rocks/public/img/logo.png">
+<meta property="og:description" content="Kaku is the next generation music player supports many different platform like YouTube, Vimeo ... etc. With it, you can listen to any music you like in different platform with just one single click, so simple to use !">
 
       <link rel="shortcut icon" type="image/png" href="../../favicon.ico">
-	    <link rel="apple-touch-icon" href="../../public/img/logo.png">
-      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2">
-	    <link rel="stylesheet" type="text/css" href="../../public/vendor/bootstrap/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="../../public/vendor/components-font-awesome/css/font-awesome.min.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/vendor/github-markdown-css/github-markdown.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/css/global.css">
-	    <link rel="stylesheet" type="text/css" href="../../public/css/docs.css">
+<link rel="apple-touch-icon" href="../../public/img/logo.png">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2">
+<link rel="stylesheet" type="text/css" href="../../public/vendor/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../public/vendor/components-font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../public/vendor/github-markdown-css/github-markdown.css">
+<link rel="stylesheet" type="text/css" href="../../public/css/global.css">
+<link rel="stylesheet" type="text/css" href="../../public/css/docs.css">
 
-      <script src="../../public/vendor/jquery/dist/jquery.min.js"></script>
-      <script src="../../public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="../../public/js/download-detect.js"></script>
+      <script src="../../public/shared/js/all.min.js"></script>
 	</head>
     <body>
       <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <a class="navbar-brand" href="../../">
-              <img src="../../public/img/logo.png" alt="Kaku's logo" width="20" height="20">
-            </a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../../">Kaku</a>
-          </div>
+  <div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <a class="navbar-brand" href="../../">
+		<img src="../../public/img/logo.png" alt="Kaku's logo" width="20" height="20">
+	  </a>
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-collapse" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="../../">Kaku</a>
+	</div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <button class="btn btn-link navbar-btn">
-                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kaku.rocks" data-text="I am listening music on Kaku !" data-hashtags="kaku_rocks">Tweet</a>
-                </button>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="fb-like" data-href="https://www.facebook.com/kaku.rocks" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-download"></i>Download</a>
-                <ul class="dropdown-menu download-dropdown-menu">
-                  <li role="separator" class="divider"></li>
-                  <li><a target="_blank" href="https://github.com/EragonJ/Kaku/releases"><i class="fa fa-fw fa-github"></i>All Downloads</a></li>
-                  <li><a target="_blank" href="https://aur4.archlinux.org/packages/kaku-bin"><i class="fa fa-fw fa-file-archive-o"></i>AUR package for Arch Linux</a></li>
-                </ul>
-              </li>
-              <li><a href="https://github.com/EragonJ/Kaku"><i class="fa fa-github"></i>GitHub</a></li>
-              <li><a href="https://www.facebook.com/kaku.rocks"><i class="fa fa-facebook-official"></i>Follow our Facebook</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-collapse">
+	  <ul class="nav navbar-nav navbar-right">
+		<li>
+		  <button class="btn btn-link navbar-btn">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kaku.rocks" data-text="I am listening music on Kaku !" data-hashtags="kaku_rocks">Tweet</a>
+		  </button>
+		</li>
+		<li>
+		  <a href="#">
+			<div class="fb-like" data-href="https://www.facebook.com/kaku.rocks" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+		  </a>
+		</li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-download"></i>Download</a>
+		  <ul class="dropdown-menu download-dropdown-menu">
+			<li role="separator" class="divider"></li>
+			<li><a target="_blank" href="https://github.com/EragonJ/Kaku/releases"><i class="fa fa-fw fa-github"></i>All Downloads</a></li>
+			<li><a target="_blank" href="https://aur4.archlinux.org/packages/kaku-bin"><i class="fa fa-fw fa-file-archive-o"></i>AUR package for Arch Linux</a></li>
+		  </ul>
+		</li>
+		<li><a href="https://github.com/EragonJ/Kaku"><i class="fa fa-github"></i>GitHub</a></li>
+		<li><a href="https://www.facebook.com/kaku.rocks"><i class="fa fa-facebook-official"></i>Follow our Facebook</a></li>
+	  </ul>
+	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
       <div class="markdown-body">
         <h1 id="-kaku-bug-">如何幫 Kaku 回報 Bug？</h1>

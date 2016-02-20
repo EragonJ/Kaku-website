@@ -4,8 +4,12 @@ import rename from 'gulp-rename';
 import rimraf from 'rimraf';
 import markdown from 'gulp-markdown';
 import template from 'gulp-template';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import fileinclude from 'gulp-file-include';
 
 const supportLanguages = ['en', 'zh-TW'];
+const vendor = `./public/vendor`;
 
 function merge(lang, file, tmpDocFiles) {
   const str = file.replace('.html', '');
@@ -14,6 +18,10 @@ function merge(lang, file, tmpDocFiles) {
 
   return gulp
     .src('./docs/template.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@root'
+    }))
     .pipe(template({
       content,
       title
@@ -21,6 +29,20 @@ function merge(lang, file, tmpDocFiles) {
     .pipe(rename(file))
     .pipe(gulp.dest(`./docs/${lang}/`))
 }
+
+gulp.task('uglify-js', () => {
+  return gulp
+    .src([
+      `${vendor}/jquery/dist/jquery.js`,
+      `${vendor}/bootstrap/dist/js/bootstrap.js`,
+      `${vendor}/js-emoji/emoji.js`,
+      `${vendor}/js-emoji/jquery.emoji.js`,
+      `./public/js/download-detect.js`
+    ])
+    .pipe(uglify())
+    .pipe(concat('all.min.js'))
+    .pipe(gulp.dest('./public/shared/js/'));
+});
 
 gulp.task('en', (cb) => {
   const docsFiles = `./docs/src/en/`;
@@ -66,4 +88,4 @@ gulp.task('build', ['mergeEn', 'mergeTW'], (cb) => {
   rimraf('./docs/tmp', cb);
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['uglify-js', 'build']);
