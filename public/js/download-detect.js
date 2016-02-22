@@ -61,7 +61,6 @@ $(document).ready(function() {
       .attr('href', downloadLink)
       .text('Download Kaku ' + kakuVersion);
 
-
     releaseNote.forEach(function(eachLine) {
       var $line = $('<div></div>');
 

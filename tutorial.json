@@ -1,22 +1,22 @@
 {
-    "how-to-back-up-music": {
-        "en": "How to back up music",
-        "zh-TW": "如何備份音樂"
-    },
-    "how-to-report-the-bug": {
-        "en": "How to report the bug",
-        "zh-TW": "如何幫 Kaku 回報 Bug"
-    },
-    "how-to-update-player": {
-        "en": "How to update player",
-        "zh-TW": "如何更新 Kaku 音樂播放器"
-    },
-    "how-to-import-playlist": {
-        "en": "How to import playlist",
-        "zh-TW": "我要如何匯入我的播放清單"
-    },
-    "how-to-use-online-dj": {
-        "en": "How to use online dj",
-        "zh-TW": "如何使用線上 DJ"
-    }
+  "how-to-back-up-music": {
+    "en": "How to back up music",
+    "zh-TW": "如何備份音樂"
+  },
+  "how-to-report-the-bug": {
+    "en": "How to report the bug",
+    "zh-TW": "如何幫 Kaku 回報 Bug"
+  },
+  "how-to-update-player": {
+    "en": "How to update player",
+    "zh-TW": "如何更新 Kaku 音樂播放器"
+  },
+  "how-to-import-playlist": {
+    "en": "How to import playlist",
+    "zh-TW": "我要如何匯入我的播放清單"
+  },
+  "how-to-use-online-dj": {
+    "en": "How to use online dj",
+    "zh-TW": "如何使用線上 DJ"
+  }
 }

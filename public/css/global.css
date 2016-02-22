@@ -8,6 +8,12 @@ i.fa-heartbeat {
   color: #ff1142;
 }
 
+.qa-breadcrumb {
+  max-width: 790px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 /* others */
 
 body {
@@ -25,6 +31,7 @@ footer p {
   color: #333;
   text-align: center;
   margin: 0;
+  border-top: 1px solid #efefef;
 }
 
 footer a {

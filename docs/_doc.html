@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Kaku tutorial - <%= title %></title>
+      @@include('./public/shared/html/_meta.html')
+      @@include('./public/shared/html/_stylesheet.html', {
+        "root": "../.."
+      })
+      <script src="../../public/shared/js/all.min.js"></script>
+	</head>
+    <body>
+      @@include('./public/shared/html/_navbar.html', {
+        "root": "../.."
+      })
+
+      <ol class="qa-breadcrumb breadcrumb">
+        <li><a href="../">Q&A</a></li>
+        <li class="active"><%= title %></li>
+      </ol>
+
+      <div class="markdown-body">
+        <%= content %>
+      </div>
+
+      @@include('./public/shared/html/_footer.html')
+    </body>
+</html>

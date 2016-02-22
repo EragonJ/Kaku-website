@@ -17,7 +17,7 @@ function merge(lang, file, tmpDocFiles) {
   const content = fs.readFileSync(`${tmpDocFiles}${file}`, 'utf8');
 
   return gulp
-    .src('./docs/template.html')
+    .src('./docs/_doc.html')
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@root'
@@ -37,7 +37,8 @@ gulp.task('uglify-js', () => {
       `${vendor}/bootstrap/dist/js/bootstrap.js`,
       `${vendor}/js-emoji/emoji.js`,
       `${vendor}/js-emoji/jquery.emoji.js`,
-      `./public/js/download-detect.js`
+      `./public/js/download-detect.js`,
+      `./public/js/list-qa.js`
     ])
     .pipe(uglify())
     .pipe(concat('all.min.js'))
@@ -84,7 +85,18 @@ gulp.task('mergeTW', ['zhTW'], () => {
   });
 });
 
-gulp.task('build', ['mergeEn', 'mergeTW'], (cb) => {
+gulp.task('docIndex', () => {
+  return gulp
+    .src('./docs/_index.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@root'
+    }))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('./docs/'));
+});
+
+gulp.task('build', ['mergeEn', 'mergeTW', 'docIndex'], (cb) => {
   rimraf('./docs/tmp', cb);
 });
 
