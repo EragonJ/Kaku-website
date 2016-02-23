@@ -23,6 +23,7 @@
 <link rel="stylesheet" type="text/css" href="../public/css/docs.css">
 
       <script src="../public/shared/js/all.min.js"></script>
+      <script src="../public/js/list-qa.js"></script>
 	</head>
     <body>
       <nav class="navbar navbar-default navbar-static-top">
@@ -71,17 +72,16 @@
 </nav>
 
 
-      <!-- TODO use list-qa.js here -->
       <div class="qa-index-container container">
-         <div class="qa-tutorial-list-en">
+         <div class="qa-list">
            <h2>English Tutorial</h2>
            <br>
-           <div class="list-group" id="en"></div>
+           <div class="list-group" data-type="en"></div>
          </div>
-         <div class="qa-tutorial-list-tw" id="tw">
+         <div class="qa-list">
            <h2>中文教學</h2>
            <br/>
-           <div class="list-group"></div>
+           <div class="list-group" data-type="zh-TW"></div>
          </div>
       </div>
 

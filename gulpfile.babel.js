@@ -37,8 +37,7 @@ gulp.task('uglify-js', () => {
       `${vendor}/bootstrap/dist/js/bootstrap.js`,
       `${vendor}/js-emoji/emoji.js`,
       `${vendor}/js-emoji/jquery.emoji.js`,
-      `./public/js/download-detect.js`,
-      `./public/js/list-qa.js`
+      `./public/js/download-detect.js`
     ])
     .pipe(uglify())
     .pipe(concat('all.min.js'))

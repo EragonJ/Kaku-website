@@ -1,13 +1,25 @@
 $(document).ready(function() {
+  var $qaList = $('.qa-list');
+
   $.ajax({
     url: '../tutorial.json'
   })
-  .done(function(data) {
-    var objLength = Object.keys(data).length;
+  .done(function(result) {
+    var tutorials = result.data;
 
-    for (var i = 0; i < objLength; i++) {
-      $('#en').append('<a href="en/how-to-back-up-music.html" class="list-group-item">' + data[i].en + '</a>');
-      $('#tw').append('<a href="tw/how-to-back-up-music.html" class="list-group-item">' + data[i]['zh-TW'] + '</a>');
-    }
+    tutorials.forEach(function(tutorial) {
+      var page = tutorial.page;
+      var languages = Object.keys(tutorial.languages);
+      languages.forEach(function(language) {
+        var $a = $('<a>');
+        var href = language + '/' + page;
+        var translation = tutorial.languages[language];
+        $a.attr('href', href);
+        $a.text(translation)
+        $a.addClass('list-group-item');
+
+        $qaList.find('.list-group[data-type="' + language + '"]').append($a);
+      });
+    });
   });
 });
