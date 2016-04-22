@@ -12,7 +12,6 @@ https://github.com/EragonJ/Kaku/releases
 
 ### How To Use
 `$ npm install`  
-`$ npm install gulp -g`  
-`$ gulp`  
+`$ npm run build`  
 
 It will auto generate docs from `*.md` to `*.html` file.
