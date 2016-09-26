@@ -16,6 +16,10 @@
   text-align: right;
 }
 
+.each-block.newsletter {
+  padding: 40px 0;
+}
+
 .each-block.statement .col {
   margin-bottom: 20px;
 }
