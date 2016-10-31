@@ -98,11 +98,11 @@
 
 .each-block.contributors {
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .each-block.contributors .contributor-list {
   margin-top: 30px;
-  text-align: center;
 }
 
 .each-block.contributors .contributor-list li {
