@@ -79,26 +79,26 @@ $(document).ready(function() {
     $downloadButton
       .attr('href', githubReleaseLink);
   });
-});
 
-function getDownloadLinkFor(platformName, assets) {
-  var patterns = {
-    'linux32': /ia32\.AppImage$/,
-    'linux64': /x84_64\.AppImage$/,
-    'win': /\.exe$/,
-    'mac': /\.dmg$/
-  };
+  function getDownloadLinkFor(platformName, assets) {
+    var patterns = {
+      'linux32': /ia32\.AppImage$/,
+      'linux64': /x86_64\.AppImage$/,
+      'win': /\.exe$/,
+      'mac': /\.dmg$/
+    };
 
-  // platform would be 'win', 'mac', 'linux32', 'linux64'
-  assets = assets || [];
-  for (var i = 0; i < assets.length; i++) {
-    var asset = assets[i];
-    var regex = patterns[platformName];
-    if (regex.test(asset.name)) {
-      return asset.browser_download_url;
+    // platform would be 'win', 'mac', 'linux32', 'linux64'
+    assets = assets || [];
+    for (var i = 0; i < assets.length; i++) {
+      var asset = assets[i];
+      var regex = patterns[platformName];
+      if (regex.test(asset.name)) {
+        return asset.browser_download_url;
+      }
     }
-  }
 
-  // fallback if we have some problems when publishing releases
-  return githubReleaseLink;
-}
+    // fallback if we have some problems when publishing releases
+    return githubReleaseLink;
+  }
+});
