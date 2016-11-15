@@ -30,20 +30,6 @@ function merge(lang, file, tmpDocFiles) {
     .pipe(gulp.dest(`./docs/${lang}/`))
 }
 
-gulp.task('uglify-js', () => {
-  return gulp
-    .src([
-      `${vendor}/jquery/dist/jquery.js`,
-      `${vendor}/bootstrap/dist/js/bootstrap.js`,
-      `${vendor}/js-emoji/emoji.js`,
-      `${vendor}/js-emoji/jquery.emoji.js`,
-      `./public/js/download-detect.js`
-    ])
-    .pipe(uglify())
-    .pipe(concat('all.min.js'))
-    .pipe(gulp.dest('./public/shared/js/'));
-});
-
 gulp.task('en', (cb) => {
   const docsFiles = `./docs/src/en/`;
   const files = fs.readdirSync(docsFiles);
@@ -95,8 +81,19 @@ gulp.task('docIndex', () => {
     .pipe(gulp.dest('./docs/'));
 });
 
-gulp.task('build', ['mergeEn', 'mergeTW', 'docIndex'], (cb) => {
+gulp.task('buildIndex', () => {
+  return gulp
+    .src('./_index.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@root'
+    }))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('buildDocs', ['mergeEn', 'mergeTW', 'docIndex'], (cb) => {
   rimraf('./docs/tmp', cb);
 });
 
-gulp.task('default', ['uglify-js', 'build']);
+gulp.task('default', ['buildDocs', 'buildIndex']);

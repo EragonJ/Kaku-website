@@ -6,7 +6,9 @@
       @@include('./public/shared/html/_stylesheet.html', {
         "root": "../.."
       })
-      <script src="../../public/shared/js/all.min.js"></script>
+      @@include('./public/shared/html/_script.html', {
+        "root": "../.."
+      })
 	</head>
     <body>
       @@include('./public/shared/html/_navbar.html', {
@@ -22,6 +24,8 @@
         <%= content %>
       </div>
 
-      @@include('./public/shared/html/_footer.html')
+      @@include('./public/shared/html/_footer.html', {
+        "root": "../.."
+      })
     </body>
 </html>

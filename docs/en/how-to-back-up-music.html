@@ -21,8 +21,26 @@
 <link rel="stylesheet" type="text/css" href="../../public/vendor/github-markdown-css/github-markdown.css">
 <link rel="stylesheet" type="text/css" href="../../public/css/global.css">
 <link rel="stylesheet" type="text/css" href="../../public/css/docs.css">
+<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
 
-      <script src="../../public/shared/js/all.min.js"></script>
+      <script src="../../public/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../../public/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../public/vendor/js-emoji/emoji.js"></script>
+<script src="../../public/vendor/js-emoji/jquery.emoji.js"></script>
+
+<script class="contributor-template" type="js/template">
+  <li>
+    <a href="#" target="_blank">
+      <img class="avatar" src="" alt="">
+      <p class="name"></p>
+    </a>
+  </li>
+</script>
+<script>
+  window.emoji.img_path = 'https://raw.githubusercontent.com/github/gemoji/master/images/emoji/unicode/';
+</script>
+<script src="../../public/js/download-detect.js"></script>
+
 	</head>
     <body>
       <nav class="navbar navbar-default navbar-static-top">
@@ -103,7 +121,11 @@
 
       </div>
 
-      <footer>
+      <a href="https://www.facebook.com/messages/kaku.rocks" target="_blank" class="messenger" title="Online Chat">
+  <img src="../../public/img/messenger.png">
+</a>
+
+<footer>
 	<p>By <a href="http://eragonj.me">EragonJ</a> | <i class="fa fa-heartbeat"></i> | Logo is designed by Peko</p>
 </footer>
 
