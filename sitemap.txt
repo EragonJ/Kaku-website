@@ -1,0 +1,12 @@
+http://kaku.rocks
+http://kaku.rocks/docs/index.html
+http://kaku.rocks/docs/en/how-to-back-up-music.html
+http://kaku.rocks/docs/en/how-to-report-the-bug.html
+http://kaku.rocks/docs/en/how-to-update-player.html
+http://kaku.rocks/docs/en/how-to-use-import-playlist.html
+http://kaku.rocks/docs/en/how-to-use-online-dj.html
+http://kaku.rocks/docs/zh-TW/how-to-back-up-music.html
+http://kaku.rocks/docs/zh-TW/how-to-report-the-bug.html
+http://kaku.rocks/docs/zh-TW/how-to-update-player.html
+http://kaku.rocks/docs/zh-TW/how-to-use-import-playlist.html
+http://kaku.rocks/docs/zh-TW/how-to-use-online-dj.html
