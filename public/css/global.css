@@ -17,6 +17,7 @@ i.fa-heartbeat {
 /* others */
 
 body {
+  position: relative;
   font-family: 'Exo 2', sans-serif;
 }
 
@@ -25,6 +26,7 @@ body > nav i {
 }
 
 footer {
+
 }
 
 footer p {
@@ -38,3 +40,12 @@ footer a {
   color: #333;
 }
 
+.messenger {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.messenger img {
+  width: 48px;
+}
