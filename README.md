@@ -11,12 +11,12 @@ Related links :
 + Kaku Desktop App : https://github.com/EragonJ/Kaku
 + Kaku Mobile App : https://github.com/EragonJ/Kaku-app
 
-### How To build docs
+### How To Change website
 
 `$ npm install`  
 `$ npm run build`  
 
-It will auto generate docs from `*.md` to `*.html` file.
+Always remember to change files with `_` prefix and build, then deploy.
 
 # Author
 
