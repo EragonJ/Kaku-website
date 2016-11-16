@@ -2,16 +2,16 @@
 <html>
     <head>
       <title>Kaku tutorial - <%= title %></title>
-      @@include('./src/_meta.html')
-      @@include('./src/_stylesheet.html', {
+      @@include('./src/shared/_meta.html')
+      @@include('./src/shared/_stylesheet.html', {
         "root": "../.."
       })
-      @@include('./src/_script.html', {
+      @@include('./src/shared/_script.html', {
         "root": "../.."
       })
 	</head>
     <body>
-      @@include('./src/_navbar.html', {
+      @@include('./src/shared/_navbar.html', {
         "root": "../.."
       })
 
@@ -24,7 +24,7 @@
         <%= content %>
       </div>
 
-      @@include('./src/_footer.html', {
+      @@include('./src/shared/_footer.html', {
         "root": "../.."
       })
     </body>

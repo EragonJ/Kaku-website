@@ -2,17 +2,17 @@
 <html>
     <head>
       <title>Kaku Q & A</title>
-      @@include('./src/_meta.html')
-      @@include('./src/_stylesheet.html', {
+      @@include('./src/shared/_meta.html')
+      @@include('./src/shared/_stylesheet.html', {
         "root": ".."
       })
-      @@include('./src/_script.html', {
+      @@include('./src/shared/_script.html', {
         "root": ".."
       })
       <script src="../public/js/list-qa.js"></script>
 	</head>
     <body>
-      @@include('./src/_navbar.html', {
+      @@include('./src/shared/_navbar.html', {
         "root": ".."
       })
 
@@ -27,7 +27,7 @@
          </div>
       </div>
 
-      @@include('./src/_footer.html', {
+      @@include('./src/shared/_footer.html', {
         "root": ".."
       })
     </body>

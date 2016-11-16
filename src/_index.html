@@ -2,18 +2,18 @@
 <html>
     <head>
       <title>Kaku - Next generation music player</title>
-      @@include('./src/_meta.html')
-      @@include('./src/_stylesheet.html', {
+      @@include('./src/shared/_meta.html')
+      @@include('./src/shared/_stylesheet.html', {
         "root": "."
       })
-      @@include('./src/_script.html', {
+      @@include('./src/shared/_script.html', {
         "root": "."
       })
       <link rel="stylesheet" type="text/css" href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css">
       <script src="./public/js/contributor.js"></script>
 	</head>
     <body>
-      @@include('./src/_navbar.html', {
+      @@include('./src/shared/_navbar.html', {
         "root": "."
       })
 
@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      @@include('./src/_footer.html', {
+      @@include('./src/shared/_footer.html', {
         "root": "."
       })
     </body>
