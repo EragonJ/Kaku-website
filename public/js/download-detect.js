@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     var downloads = {};
     var platforms = ['linux32', 'linux64', 'win', 'mac'];
-    var platformNames = ['Linux32', 'Linux64', 'Windows', 'Mac OS X'];
+    var platformNames = ['Linux (32 bit)', 'Linux (64 bit)', 'Windows (64 bit)', 'Mac OS X'];
     var platformsIcon = ['fa-linux', 'fa-linux', 'fa-windows', 'fa-apple'];
 
     platforms.forEach(function(platformName) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
       var $dropdownList = $('<li><a></a></li>');
       $a = $dropdownList.find('a');
       $a.attr('href', downloads[platformName]);
-      $a.html('<i class="fa fa-fw ' + platformsIcon[index] + '"></i>' + platformNames[index] + ' - v' + kakuVersion);
+      $a.html('<i class="fa fa-fw ' + platformsIcon[index] + '"></i>' + platformNames[index] + ' - ' + kakuVersion);
       $downloadDropdownMenu.prepend($dropdownList);
     });
     
