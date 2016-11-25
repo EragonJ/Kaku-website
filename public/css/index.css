@@ -96,9 +96,26 @@
           filter: grayscale(0%);
 }
 
-.each-block.contributors {
+.each-block.support-us {
   background-color: #f9f9f9;
   text-align: center;
+}
+
+.each-block.support-us .words {
+  padding: 20px 0;
+}
+
+.each-block.support-us p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.each-block.contributors {
+  text-align: center;
+}
+
+.each-block.contributors p {
+  font-size: 16px;
 }
 
 .each-block.contributors .contributor-list {
@@ -119,6 +136,7 @@
 }
 
 .each-block.contributors .contributor-list .name {
+  font-size: 14px;
   width: 120px;
   text-overflow: ellipsis;
   overflow: hidden;
