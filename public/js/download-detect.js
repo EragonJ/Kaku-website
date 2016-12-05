@@ -17,16 +17,39 @@ $(document).ready(function() {
   $.ajax({
     url: githubReleaseAPILink
   }).done(function(result) {
+
     var downloadLink;
+    var downloadFilename;
+
     var kakuVersion = result.name || '';
     var assets = result.assets || [];
     var releaseNote = result.body || '';
     releaseNote = releaseNote.split('\n');
 
     var downloads = {};
-    var platforms = ['linux32', 'linux64', 'win', 'mac'];
-    var platformNames = ['Linux (32 bit)', 'Linux (64 bit)', 'Windows (64 bit)', 'Mac OS X'];
-    var platformsIcon = ['fa-linux', 'fa-linux', 'fa-windows', 'fa-apple'];
+    var platforms = [
+      'linux32',
+      'linux64',
+      'win64',
+      'win32',
+      'mac'
+    ];
+
+    var platformNames = [
+      'Linux (32 bit)',
+      'Linux (64 bit)',
+      'Windows (64 bit)',
+      'Windows (32 bit)',
+      'Mac OS X'
+    ];
+
+    var platformsIcon = [
+      'fa-linux',
+      'fa-linux',
+      'fa-windows',
+      'fa-windows',
+      'fa-apple'
+    ];
 
     platforms.forEach(function(platformName) {
       downloads[platformName] = getDownloadLinkFor(platformName, assets);
@@ -34,18 +57,22 @@ $(document).ready(function() {
 
     if (macRegex.test(platform)) {
       downloadLink = downloads['mac'];
+      downloadFilename = 'Mac OS X';
     }
     else if (winRegex.test(platform)) {
-      downloadLink = downloads['win'];
+      downloadLink = downloads['win64'];
+      downloadFilename = 'Windows (64 bit)';
     }
     else if (linuxRegex.test(platform)) {
       // Linux 64
       if (linux64Regex.test(platform)) {
         downloadLink = downloads['linux64']
+        downloadFilename = 'Linux (64 bit)';
       }
       // Linux 32
       else {
         downloadLink = downloads['linux32'];
+        downloadFilename = 'Linux (32 bit)';
       }
     }
 
@@ -59,7 +86,7 @@ $(document).ready(function() {
     
     $downloadButton
       .attr('href', downloadLink)
-      .text('Download Kaku ' + kakuVersion);
+      .text('Download for ' + downloadFilename);
 
     releaseNote.forEach(function(eachLine) {
       var $line = $('<div></div>');
@@ -84,7 +111,8 @@ $(document).ready(function() {
     var patterns = {
       'linux32': /ia32\.AppImage$/,
       'linux64': /x86_64\.AppImage$/,
-      'win': /\.exe$/,
+      'win32': /[-ia32]\.exe$/,
+      'win64': /[^-ia32]\.exe$/,
       'mac': /\.dmg$/
     };
 
