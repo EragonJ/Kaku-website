@@ -121,10 +121,10 @@ $(document).ready(function() {
 
   function getDownloadLinkFor(platformName, assets) {
     var patterns = {
-      'linuxAppImage32': /-i386\.AppImage/,
-      'linuxAppImage64': /-x86_64\.AppImage/,
+      'linuxAppImage32': /-i386\.AppImage$/,
+      'linuxAppImage64': /-x86_64\.AppImage$/,
       'linux32': /-ia32\.tar\.gz$/,
-      'linux64': /\.tar\.gz$/,
+      'linux64': /\.\d+\.tar\.gz$/,
       'debian32': /_i386.deb$/,
       'debian64': /_amd64.deb$/,
       'win32': /\.exe$/,
