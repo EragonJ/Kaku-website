@@ -28,6 +28,8 @@ $(document).ready(function() {
 
     var downloads = {};
     var platforms = [
+      'linuxAppImage32',
+      'linuxAppImage64',
       'linux32',
       'linux64',
       'debian32',
@@ -38,6 +40,8 @@ $(document).ready(function() {
     ];
 
     var platformNames = [
+      'Linux AppIamge (32 bit)',
+      'Linux AppImage (64 bit)',
       'Linux (32 bit)',
       'Linux (64 bit)',
       'Debian (32 bit)',
@@ -48,6 +52,8 @@ $(document).ready(function() {
     ];
 
     var platformsIcon = [
+      'fa-linux',
+      'fa-linux',
       'fa-linux',
       'fa-linux',
       'fa-linux',
@@ -115,10 +121,12 @@ $(document).ready(function() {
 
   function getDownloadLinkFor(platformName, assets) {
     var patterns = {
-      'linux32': /-ia32.tar.gz$/,
-      'linux64': /.tar.gz$/,
-      'debian32': /-i386.deb$/,
-      'debian64': /-amd64.deb$/,
+      'linuxAppImage32': /-i386\.AppImage/,
+      'linuxAppImage64': /-x86_64\.AppImage/,
+      'linux32': /-ia32\.tar\.gz$/,
+      'linux64': /\.tar\.gz$/,
+      'debian32': /_i386.deb$/,
+      'debian64': /_amd64.deb$/,
       'win32': /\.exe$/,
       'win64': /\.exe$/,
       'mac': /\.dmg$/
