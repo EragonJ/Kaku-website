@@ -18,10 +18,19 @@
 
 .each-block.newsletter {
   padding: 40px 0;
+  background-color: #f9f9f9;
 }
 
 .each-block.statement .col {
   margin-bottom: 20px;
+}
+
+.each-block.sponsors {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.each-block.sponsors img {
 }
 
 .each-block.statement h1 {
